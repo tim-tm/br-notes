@@ -115,5 +115,54 @@
 \end{center}
 
 \subsection{Portfolioanalyse (BCG-Matrix)}
+\begin{flushleft}
+    Die Portfolioanalyse ist eine Analysestrategie, die eine übersichtliche Darstellung des gesamten
+    Portfolio erlaubt. Bei einer Portfolioanalyse wird eine Vierfeldmatrix erstellt, diese Matrix wird auch BCG-Matrix
+    genannt, da sie durch die Boston Consulting Group bekannt wurde. Die vier Felder stellen die vier Produktlebensphasen dar.
+\end{flushleft}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines=middle,
+    xlabel={relativer Marktanteil},
+    ylabel={Marktwachstum},
+    xmax=2,
+    xmin=0,
+    ymax=2,
+    ymin=0,
+    xticklabel=\empty,
+    yticklabel=\empty
+]
+\addplot[draw=none] coordinates {
+    (0,0)
+};
+\draw[color=black, dashed] (axis cs:0, 1) -- (axis cs:2, 1);
+\draw[color=black, dashed] (axis cs:1, 0) -- (axis cs:1, 2);
+\draw (axis cs:0.5,1.1) node {Question Marks};
+\draw (axis cs:1.5,1.1) node {Stars};
+\draw (axis cs:0.5,0.9) node {Poor Dogs};
+\draw (axis cs:1.5,0.9) node {Cash Cows};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{flushleft}
+    So wie bei dem Produktlebenszyklus gibt es hier verschiedene Merkmale für die Produktlebensphasen.
+\end{flushleft}
+\begin{center}
+\begin{tabular}{|l|p{8cm}|}
+    \hline
+    \textbf{Phase} & \textbf{Merkmale} \\
+    \hline
+    Question Marks & Question Marks haben ein hohes Marktwachstum aber einen kleinen relativen Marktanteil. Es muss entschieden werden ob es sich lohnt den relativen Marktanteil durch Vermarktung zu steigern oder nicht. \\
+    \hline
+    Stars & Die Stars des Portfolios haben ein hohes Marktwachstum und einen hohen relativen Marktanteil. Sie befinden sich in der optimalen Position. \\
+    \hline
+    Poor Dogs & Alle neuen Produkte sind zu erst Poor Dogs. Alte Produkte, die keine Gewinne mehr abwerfen werden zu Poor Dogs. \\
+    \hline
+    Cash Cows & Da Cash Cows einen hohen relativen Marktanteil aber ein niedriges Marktwachstum haben, wird versucht aus ihnen das meiste herauszuholen. Sie werden wie Kühe gemolken. \\
+    \hline
+\end{tabular}
+\end{center}
 
 \section{Marktforschung}
